@@ -2,7 +2,7 @@ function mostrarMensaje() {
     console.log("Hola, como estas?");
 
 }
-function capturarTexto (){
+function agregarTexto (){
     let input = document.querySelector("#nuevaTarea");
     if (input.value === "") {
         alert("El campo no puede estar vacio");
@@ -20,4 +20,5 @@ li.remove();
     li.appendChild(button);
     ul.appendChild(li);
     input.value = "";
+    input.focus();
 }
